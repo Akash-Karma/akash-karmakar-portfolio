@@ -163,81 +163,80 @@ const Portfolio = () => {
 
 
               {/* Project Info - Flip Card */}
-{/* Project Info - Flip Card */}
-<div className="p-2 flex-1" style={{ perspective: '1000px' }}>
-  <div
-    className="relative transition-transform duration-700"
-    style={{
-      transformStyle: 'preserve-3d',
-      height: '280px',
-    }}
-    onMouseEnter={e => (e.currentTarget.style.transform = 'rotateY(180deg)')}
-    onMouseLeave={e => (e.currentTarget.style.transform = 'rotateY(0deg)')}
-  >
-    {/* FRONT SIDE */}
-    <div
-      className="absolute inset-0 overflow-hidden"
-      style={{ backfaceVisibility: 'hidden' }}
-    >
-      <h3 className="text-lg font-heading font-semibold mb-2 text-foreground transition-colors duration-300">
-        {project.title}
-      </h3>
+              <div className="p-2 flex-1" style={{ perspective: '1000px' }}>
+                <div
+                  className="relative transition-transform duration-700"
+                  style={{
+                    transformStyle: 'preserve-3d',
+                    height: '280px',
+                  }}
+                  onMouseEnter={e => (e.currentTarget.style.transform = 'rotateY(180deg)')}
+                  onMouseLeave={e => (e.currentTarget.style.transform = 'rotateY(0deg)')}
+                >
+                  {/* FRONT SIDE - Project Theme Image */}
+                  <div
+                    className="absolute inset-0 rounded-xl overflow-hidden"
+                    style={{ backfaceVisibility: 'hidden' }}
+                  >
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-4">
+                      <div>
+                        <span className="text-white font-bold text-base block">{project.title}</span>
+                        <span className="text-white/70 text-xs">{project.category}</span>
+                      </div>
+                    </div>
+                  </div>
 
-      <p className="text-muted-foreground mb-3 leading-relaxed text-sm line-clamp-3">
-        {project.description}
-      </p>
+                  {/* BACK SIDE - Project Info */}
+                  <div
+                    className="absolute inset-0 overflow-hidden"
+                    style={{
+                      backfaceVisibility: 'hidden',
+                      transform: 'rotateY(180deg)',
+                    }}
+                  >
+                    <h3 className="text-lg font-heading font-semibold mb-2 text-foreground transition-colors duration-300">
+                      {project.title}
+                    </h3>
 
-      {/* Features */}
-      <div className="mb-3">
-        <div className="flex flex-wrap gap-1">
-          {project.features.map((feature, featureIndex) => (
-            <span
-              key={featureIndex}
-              className="px-2 py-1 bg-muted/50 text-muted-foreground text-xs rounded-md"
-            >
-              {feature}
-            </span>
-          ))}
-        </div>
-      </div>
+                    <p className="text-muted-foreground mb-3 leading-relaxed text-sm line-clamp-3">
+                      {project.description}
+                    </p>
 
-      {/* Tech Stack */}
-      <div>
-        <div className="flex flex-wrap gap-1">
-          {project.tech.map((tech, techIndex) => (
-            <span
-              key={techIndex}
-              className="px-2 py-1 bg-gradient-primary text-white text-xs rounded-full font-medium"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
+                    {/* Features */}
+                    <div className="mb-3">
+                      <div className="flex flex-wrap gap-1">
+                        {project.features.map((feature, featureIndex) => (
+                          <span
+                            key={featureIndex}
+                            className="px-2 py-1 bg-muted/50 text-muted-foreground text-xs rounded-md"
+                          >
+                            {feature}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
 
-    {/* BACK SIDE - Project Theme Image */}
-    <div
-      className="absolute inset-0 rounded-xl overflow-hidden"
-      style={{
-        backfaceVisibility: 'hidden',
-        transform: 'rotateY(180deg)',
-      }}
-    >
-      <img
-        src={project.image}
-        alt={project.title}
-        className="w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-4">
-        <div>
-          <span className="text-white font-bold text-base block">{project.title}</span>
-          <span className="text-white/70 text-xs">{project.category}</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                    {/* Tech Stack */}
+                    <div>
+                      <div className="flex flex-wrap gap-1">
+                        {project.tech.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="px-2 py-1 bg-gradient-primary text-white text-xs rounded-full font-medium"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
 

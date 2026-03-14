@@ -9,8 +9,7 @@ const Hero = () => {
   };
 
   const handlePortfolioClick = () => {
-    const element = document.querySelector('#portfolio');
-    element?.scrollIntoView({ behavior: 'smooth' });
+     window.open("https://drive.google.com/file/d/1fzNNVrCw7U0RE6FEUVeDEi6pQKCPdmak/view?usp=sharing", "_blank");
   };
 
   return (
@@ -37,7 +36,7 @@ const Hero = () => {
                 onClick={handlePortfolioClick}
                 className="btn-hero group"
               >
-                View Portfolio
+                View Resume
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button 
