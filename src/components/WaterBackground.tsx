@@ -20,7 +20,7 @@ const WaterBackground = () => {
     let cols: number;
     let rows: number;
 
-    const DAMPING = 0.985;
+    const DAMPING = 0.9;
 
     const init = () => {
       width = window.innerWidth;
