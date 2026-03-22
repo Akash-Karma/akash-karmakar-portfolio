@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Globe, Bot, Brain, Zap, Palette, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Globe, Bot, Cloud, Zap, Palette, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Services = () => {
@@ -27,10 +27,10 @@ const Services = () => {
       borderColor: "border-secondary/20"
     },
     {
-      icon: Brain,
-      title: "AI & Machine Learning Solutions",
+      icon: Cloud,
+      title: "Cloud engineering Solutions",
       description: "Forecasting, optimization, and predictive analytics to solve complex business problems.",
-      features: ["Predictive Modeling", "Data Analysis", "Time Series Forecasting", "Optimization Algorithms"],
+      features: ["AWS", "Microservices", "Docker", "Kubernetes", "Azure"],
       color: "text-accent",
       bgColor: "bg-accent/10",
       borderColor: "border-accent/20"

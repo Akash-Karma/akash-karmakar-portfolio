@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Code, Brain, Palette, Settings, Database, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Code, Cloud, Palette, Settings, Database, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Skills = () => {
   const [startIndex, setStartIndex] = useState(0);
@@ -15,11 +15,11 @@ const Skills = () => {
       skills: ["C++", "Python", "Java", "JavaScript", "HTML", "CSS"]
     },
     {
-      title: "AI & Machine Learning",
-      icon: Brain,
+      title: "AI & cloud engineering",
+      icon: Cloud,
       color: "text-secondary",
       bgColor: "bg-secondary/10",
-      skills: ["Time Series Forecasting", "Data Analysis", "NumPy", "Pandas", "Matplotlib", "Scikit-learn", "TensorFlow", "PyTorch"]
+      skills: ["AWS", "Docker", "Microservices", "Azure", "Kubernetes"]
     },
     {
       title: "Web Development",
@@ -47,7 +47,7 @@ const Skills = () => {
       icon: Palette,
       color: "text-purple-500",
       bgColor: "bg-purple-500/10",
-      skills: ["Machine Learning", "Optimization Models", "Education Tech", "Automation", "Data Visualization"]
+      skills: ["cloud engineering", "Optimization Models", "Education Tech", "Automation", "Data Visualization"]
     }
   ];
 
@@ -264,7 +264,7 @@ const Skills = () => {
               </div>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4 text-foreground">AI & Machine Learning</h4>
+              <h4 className="text-lg font-semibold mb-4 text-foreground">AI & cloud engineering</h4>
               <div className="space-y-4">
                 {[
                   { skill: "ML Algorithms", level: 82 },

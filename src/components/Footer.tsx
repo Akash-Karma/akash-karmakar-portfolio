@@ -8,31 +8,31 @@ const Footer = () => {
     {
       name: 'GitHub',
       icon: Github,
-      href: 'https://github.com/mohd-ksr',
+      href: 'https://github.com/Akash-Karma',
       color: 'hover:text-accent'
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      href: 'https://linkedin.com/in/mo-kausar',
+      href: 'https://linkedin.com/in/akash-karmakar1',
       color: 'hover:text-secondary'
     },
     {
       name: 'Email',
       icon: Mail,
-      href: 'mailto:mohd.ksr2003@gmail.com',
+      href: 'mailto:akash.karma17@gmail.com',
       color: 'hover:text-primary'
     },
     {
       name: 'Email',
       icon: Code,
-      href: 'https://leetcode.com/u/Mo_Kausar/',
+      href: 'https://leetcode.com/u/Akash_Karma/',
       color: 'hover:text-secondary'
     },
     {
       name: 'Instagram',
       icon: Instagram,
-      href: 'https://instagram.com/mohd.ksr',
+      href: 'https://www.instagram.com/_akash_karmakar_/',
       color: 'hover:text-accent'
     }
   ];
@@ -56,10 +56,10 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="md:col-span-2">
               <div className="text-3xl font-heading font-bold text-gradient-primary mb-4">
-                Mo Kausar
+                Akash Karmakar
               </div>
               <p className="text-muted-foreground mb-6 max-w-md leading-relaxed">
-                Passionate about turning ideas into practical solutions through AI, Machine Learning, 
+                Passionate about turning ideas into practical solutions through AI, cloud engineering, 
                 and Web Development. Always excited to work on innovative projects.
               </p>
               <div className="flex gap-4">
@@ -127,7 +127,7 @@ const Footer = () => {
         <div className="border-t border-border/30 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2 text-muted-foreground">
-              <span>© {currentYear} Mo Kausar. Made with lots of coffee.</span>
+              <span>© {currentYear} Akash Karmakar. Made with lots of coffee.</span>
             </div>
 
             <div className="flex items-center gap-4">

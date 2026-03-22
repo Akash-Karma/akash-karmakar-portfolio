@@ -1,6 +1,6 @@
 import { ArrowRight, Download, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profileImage from '@/assets/kausar.png';
+import profileImage from '@/assets/akash.jpeg';
 
 const Hero = () => {
   const handleContactClick = () => {
@@ -21,10 +21,10 @@ const Hero = () => {
           <div className="text-center lg:text-left animate-fade-in">
             <div className="mb-6">
               <h1 className="text-5xl lg:text-7xl font-heading font-bold mb-4">
-                <span className="text-gradient-primary">Mo Kausar</span>
+                <span className="text-gradient-primary">Akash Karmakar</span>
               </h1>
               <h2 className="text-2xl lg:text-3xl font-semibold text-muted-foreground mb-4">
-                AI | Machine Learning | Web Development | Competitive Programming
+                AI | Cloud Engineering | Web Development | Competitive Programming
               </h2>
               <p className="text-lg lg:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0">
                 Turning ideas into practical solutions with AI, ML, and modern web applications.
@@ -76,7 +76,7 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full overflow-hidden bg-card">
                   <img
                     src={profileImage}
-                    alt="Mo Kausar - AI & ML Developer"
+                    alt="Akash Karmakar - AI & ML Developer"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>

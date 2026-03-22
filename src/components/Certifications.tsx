@@ -2,7 +2,7 @@ import { ExternalLink, Award, Calendar, Building2, ArrowRight } from 'lucide-rea
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import snaImg from "@/assets/social-network-analysis.png"
-import frontendImg from "@/assets/intro-frontend.png"
+import frontendImg from "@/assets/hardware.png"
 import dsaImg from "@/assets/data-structures.png"
 
 const Certifications = () => {
@@ -12,35 +12,32 @@ const Certifications = () => {
     {
       title: "Data Structures & Algorithms",
       image: dsaImg,
-      issuer: "CipherSchools",
+      issuer: "SkillStone",
       date: "July 2025",
-      description: "Hands-on offline training in Data Structures & Algorithms at Lovely Professional University, conducted by CipherSchools. Certificate ID: CS2025-14731.",
-      skills: ["DSA", "Problem Solving", "Algorithms", "Data Structures"],
-      link: "https://cipher-other-assets.s3.ap-south-1.amazonaws.com/certificates/TC_mohd.ksr2003%40gmail.com_CS2025-14731",
+      description: "Hands-on offline training in Data Structures & Algorithms at Lovely Professional University, conducted by SkillStone.",
+      link: "https://drive.google.com/file/d/11g_hjmJHwwVFpvQ2INK7mcdFRm5N_Q6t/view?usp=drive_link",
       color: "text-purple-500",
       bgColor: "bg-purple-500/10",
       issuerColor: "text-purple-500",
     },
     {
-      title: "Social Network Analysis",
+      title: "Bits and Bytes of Networking",
       image: snaImg,
-      issuer: "NPTEL – IIT Madras",
-      date: "Jul–Oct 2025",
-      description: "Elite certification from IIT Madras on analysing social networks, graph structures, community detection, and influence propagation. Scored 75% with a 12-week proctored course.",
-      skills: ["Graph Theory", "Network Analysis", "Data Science", "Python"],
-      link: "https://drive.google.com/file/d/1dxzwwF7rpzYlow_ZxRI2SyAS2BZ5PFL7/view?usp=drive_link",
+      issuer: "Google",
+      date: "Sept 2024",
+      description: "Foundational networking concepts, protocols, and infrastructure.",
+      link: "https://coursera.org/share/79cec4182716107fbeadedfed6008a4b",
       color: "text-success",
       bgColor: "bg-success/10",
       issuerColor: "text-success",
     },
     {
-      title: "Introduction to Front-End Development",
+      title: "Introduction to Hardware and Operating System",
       image: frontendImg,
-      issuer: "Meta – Coursera",
-      date: "Nov 2025",
-      description: "Meta-authorized course covering front-end development fundamentals including HTML, CSS, UI frameworks, and React basics. Offered through Coursera.",
-      skills: ["HTML", "CSS", "React", "UI Frameworks"],
-      link: "https://coursera.org/verify/WXWLO7MI73YT",
+      issuer: "IBM",
+      date: "Sep 2024",
+      description: "Core principles of OS architecture and hardware interfacing.",
+      link: "https://coursera.org/share/57acbce621fd0c18cf534bbf3bdc612e",
       color: "text-primary",
       bgColor: "bg-primary/10",
       issuerColor: "text-primary",
@@ -113,7 +110,7 @@ const Certifications = () => {
                       <h3 className="text-sm font-heading font-bold text-foreground mb-2 line-clamp-2">{cert.title}</h3>
                       <p className="text-muted-foreground text-xs leading-relaxed mb-3 line-clamp-4">{cert.description}</p>
                       <div className="flex flex-wrap gap-1 mb-3">
-                        {cert.skills.map((skill, i) => (
+                        {cert.skills?.map((skill, i) => (
                           <span key={i} className="px-2 py-0.5 bg-gradient-primary text-white text-xs rounded-full font-medium">{skill}</span>
                         ))}
                       </div>
@@ -150,13 +147,14 @@ const Certifications = () => {
             Showing 3 of <span className="font-semibold text-foreground">25 certifications</span>
           </p>
           <Button
-            onClick={() => navigate('/certifications')}
-            className="btn-hero px-8"
-          >
-            <Award className="h-4 w-4 mr-2" />
-            View All Certificates
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </Button>
+  onClick={() => window.open('https://drive.google.com/drive/folders/1vx-_cNVLyWmHns3ed-2RtMUsJsoxaz2k?usp=sharing', '_blank')}
+  variant="outline"
+  size="sm"
+  className="w-full group hover:bg-primary hover:text-white transition-all duration-300"
+>
+  <ExternalLink className="h-4 w-4 mr-2" />
+  View on Google Drive
+</Button>
         </div>
       </div>
     </section>

@@ -42,29 +42,29 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "mohd.ksr2003@gmail.com",
-      href: "mailto:mohd.ksr2003@gmail.com",
+      value: "akash.karma17@gmail.com",
+      href: "mailto:akash.karma17@gmail.com",
       color: "text-primary"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 7023315900",
-      href: "tel:+917023315900",
+      value: "+91 9932870908",
+      href: "tel:+919932870908",
       color: "text-success"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/mo-kausar",
-      href: "https://linkedin.com/in/mo-kausar",
+      value: "linkedin.com/in/akash-karmakar1",
+      href: "https://www.linkedin.com/in/akash-karmakar1/",
       color: "text-secondary"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/mohd-ksr",
-      href: "https://github.com/mohd-ksr",
+      value: "github.com/Akash-Karma",
+      href: "https://github.com/Akash-Karma",
       color: "text-accent"
     }
   ];
@@ -218,7 +218,7 @@ const Contact = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                    <span className="text-muted-foreground">AI/ML Internships</span>
+                    <span className="text-muted-foreground">AI/ML/Cloud Internships</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-accent rounded-full"></div>

@@ -61,7 +61,7 @@ const Header = () => {
             onClick={() => handleNavClick('#home')}
             className="text-2xl font-heading font-bold text-gradient-primary"
           >
-            Mo Kausar
+            Akash Karmakar
           </button>
 
           {/* Desktop Navigation */}

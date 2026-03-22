@@ -3,18 +3,18 @@ import { GraduationCap, MapPin, Calendar } from 'lucide-react';
 const About = () => {
   const educationData = [
     {
-      degree: "B.Tech in Computer Science (Machine Learning)",
+      degree: "B.Tech in Computer Science (cloud engineering)",
       school: "Lovely Professional University",
       year: "Batch of 2027",
       status: "Currently Pursuing",
-      description: "Specializing in Machine Learning, AI algorithms, and software development."
+      description: "Specializing in Cloud Engineering, AI algorithms, and software development."
     },
     {
       degree: "Senior Secondary (12th)",
-      school: "Jai Prakash Narayan Sr. Sec. School",
+      school: "Army Public School, Barrackpore",
       year: "Completed",
       status: "Graduated",
-      description: "Strong foundation in Mathematics and Science."
+      description: "Strong foundation in Mathematics, Science and Computer Science."
     }
   ];
 
@@ -39,13 +39,13 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-lg leading-relaxed">
                 <p>
-                  I'm <strong className="text-primary">Mo Kausar</strong>, a passionate learner and builder in the fields of AI, machine learning, and web development. I enjoy turning ideas into practical solutions—whether that's optimizing processes with intelligent models, designing interactive web applications, or exploring innovative technologies.
+                  I'm <strong className="text-primary">Akash Karmakar</strong>, a passionate learner and builder in the fields of AI, cloud engineering, and web development. I enjoy turning ideas into practical solutions—whether that's optimizing processes with intelligent models, designing interactive web applications, or exploring innovative technologies.
                 </p>
                 <p>
                   What drives me is the curiosity to solve real-world problems and create meaningful impact through technology. From developing chatbots that provide career guidance to building optimization models that minimize food waste, I'm always looking for ways to make technology work for people.
                 </p>
                 <p>
-                  When I'm not coding, you'll find me exploring new AI tools, contributing to open-source projects, or learning about the latest developments in machine learning. I believe in continuous learning and sharing knowledge with the community.
+                  When I'm not coding, you'll find me exploring new AI tools, contributing to open-source projects, or learning about the latest developments in cloud engineering. I believe in continuous learning and sharing knowledge with the community.
                 </p>
               </div>
 
