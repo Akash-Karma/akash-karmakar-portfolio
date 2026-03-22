@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   const handlePortfolioClick = () => {
-     window.open("https://drive.google.com/file/d/1WxlsFW-fHjiih8nUxW1gML8KiSg9LFiZ/view", "_blank");
+     window.open("https://drive.google.com/file/d/1DZOUNCaqEX-N36LtpmbJVu96CntO0WZb/view?usp=sharing", "_blank");
   };
 
   return (
