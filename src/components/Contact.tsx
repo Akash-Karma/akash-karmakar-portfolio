@@ -182,7 +182,7 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="Hi Mo! I'm reaching out regarding an internship / collaboration / opportunity..."
+                    placeholder="Hi Akash! I'm reaching out regarding an internship / collaboration / opportunity..."
                     rows={6}
                     required
                     className="w-full resize-none"
